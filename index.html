@@ -553,5 +553,18 @@ function showMotivation() {
   document.getElementById("motivationText").innerHTML = messages[randomIndex];
 }
  </script>
+ <script>
+function toggleText(id, btn) {
+  let moreText = document.getElementById(id);
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "block";
+    btn.innerHTML = "Show Less";
+  } else {
+    moreText.style.display = "none";
+    btn.innerHTML = "Read More";
+  }
+}
+ </script>
 </body>
 </html
