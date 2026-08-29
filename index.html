@@ -545,8 +545,18 @@ If you have the opportunity to access this book, I encourage you to make good us
 </button>
  <script>
 function showMotivation() {
-  document.getElementById("motivationText").innerHTML =
-  "You don’t have to be perfect. Just be consistent. Small effort every day leads to big results 🚀";
+
+  let messages = [
+    "You don’t have to be perfect. Just be consistent 💯",
+    "Small effort every day leads to big results 🚀",
+    "Don’t give up — your future self is watching 👀",
+    "Discipline will take you further than motivation 🔥",
+    "You’re stronger than your excuses 💪"
+  ];
+
+  let randomIndex = Math.floor(Math.random() * messages.length);
+
+  document.getElementById("motivationText").innerHTML = messages[randomIndex];
 }
  </script>
 </body>
