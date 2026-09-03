@@ -9,13 +9,16 @@ html {
 }
   </style>
 </head>
-<body style="background-color:#1e1e2f; color: white ;text-align:center;font-family:Arial;line-height:1.8;">
+<body>
 <div style="background-color: #111; padding: 10px; position: sticky; top: 0;">
   <a href="#home" style="color: white; margin: 10px;">Home</a>
   <a href="#about" style="color: white; margin: 10px;">About</a>
   <a href="#platform" style="color: white; margin: 10px;">Platform</a>
   <a href="#guide" style="color: white; margin: 10px;">Guide</a>
   <a href="#resources" style="color: white; margin: 10px;">Recommended resources</a>
+  <button onclick="toggleDarkMode()" style="margin-left:10px;">
+    🌙 Mode
+  </button>
 </div>
 <h1 style="color: blue;" id="home">welcome to my website</h1>
  <button onclick="showMotivation()" style="padding:10px; border-radius:8px;">
@@ -568,6 +571,11 @@ function toggleText(id, btn) {
     moreText.style.display = "none";
     btn.innerHTML = "Read More";
   }
+}
+ </script>
+ <script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
 }
  </script>
 </body>
